@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta de Colores</title>
+    <style>
+        /* Estilo para el contenedor central */
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        /* Estilo para el título */
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo base para los cuadrados */
+        .cuadrado {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 10px;
+            border: 2px solid #000;
+            cursor: pointer;
+            line-height: 100px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* Colores iniciales */
+        #cuadro1 {
+            background-color: lightcoral;
+        }
+
+        #cuadro2 {
+            background-color: lightblue;
+        }
+
+        #cuadro3 {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <!-- Contenedor central -->
+    <div class="contenedor">
+        <!-- Título -->
+        <h1>Ruleta</h1>
+
+        <!-- Tres cuadrados con colores iniciales -->
+        <div id="cuadro1" class="cuadrado">Cuadro 1</div>
+        <div id="cuadro2" class="cuadrado">Cuadro 2</div>
+        <div id="cuadro3" class="cuadrado">Cuadro 3</div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="manipulacion3.js"></script>
+</body>
+</html>
